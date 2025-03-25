@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -50,8 +51,25 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+    'email' => [
+        'required',
+        'string',
+        'email',
+        'max:255',
+        'unique:users',
+        function ($attribute, $value, $fail) {
+            if (!Str::endsWith($value, '@usco.edu.co')) {
+                $fail('Solo se permiten correos electrónicos de @usco.edu.co');
+            }
+        },
+    ],
+        'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ], [
+            'required' => 'El campo :attribute es obligatorio.',
+            'email.email' => 'Debe ingresar un correo válido.',
+            'email.unique' => 'Este correo ya está registrado.',
+            'password.min' => 'La contraseña debe tener al menos :min caracteres.',
+            'password.confirmed' => 'Las contraseñas no coinciden.',
         ]);
     }
 
