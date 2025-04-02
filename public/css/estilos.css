@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Boldonse', sans-serif;
+}
+
+
+body {
+    text-align: center;
+    color: black;
+    background-image: url('../img/fondojpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;  
+    height: 100vh; 
+    display: flex; /* Habilita el uso de Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+}
+
+.container{    
+    height: 360px; 
+    width: 900px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 10px; 
+    padding: 20px;
+}
+
+.buttons .btn {
+    font-family: 'Boldonse', sans-serif;  /* Aplica la fuente que seleccionaste */
+    padding: 10px 20px;                   /* Espaciado dentro del botón */
+    background-color: #3498db;            /* Color de fondo */
+    color: white;                         /* Color del texto */
+    border: 2px solid #2980b9;            /* Recuadro (borde) alrededor del enlace */
+    border-radius: 5px;                   /* Bordes redondeados */
+    text-decoration: none;                /* Elimina el subrayado del enlace */
+    cursor: pointer;                      /* Cambia el cursor al pasar sobre el enlace */
+    display: inline-block;                 /* Hace que el enlace se comporte como un botón */
+    margin: 10px;                         /* Espacio entre los botones */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el hover */
+}
+
+.buttons .btn:hover {
+    background-color: #2980b9;            /* Cambia el color de fondo */
+    border-color: #1c598a;                /* Cambia el color del borde */
+    transform: scale(1.1);                 /* Agranda el botón ligeramente */
+}
+
