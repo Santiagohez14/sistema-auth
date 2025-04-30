@@ -11,7 +11,7 @@ body {
     text-align: center;
     color: black;
     /*background-image: url('../img/fondojpg.jpg');*/
-    background-color: #0f172a;
+    background-color: #f4f6f7;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,15 +25,16 @@ body {
 .container{    
     height: 360px; 
     width: 900px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: #f4f6f7; 
     border-radius: 10px; 
     padding: 20px;
+    border-color: #05311d;
 }
 
 .buttons .btn {
     font-family: 'Boldonse', sans-serif;  /* Aplica la fuente que seleccionaste */
     padding: 10px 20px;                   /* Espaciado dentro del botón */
-    background-color: #767879;            /* Color de fondo */
+    background-color: #05311d;            /* Color de fondo */
     color: white;                         /* Color del texto */
     /*border: 2px solid #000000;            /* Recuadro (borde) alrededor del enlace */
     border-radius: 5px;                   /* Bordes redondeados */
@@ -45,8 +46,8 @@ body {
 }
 
 .buttons .btn:hover {
-    background-color: #0f172a;            /* Cambia el color de fondo */
-    border-color: #444648;                /* Cambia el color del borde */
+            /* Cambia el color de fondo */
+    border-color: #05311d;                /* Cambia el color del borde */
     transform: scale(1.1);                 /* Agranda el botón ligeramente */
 }
 
