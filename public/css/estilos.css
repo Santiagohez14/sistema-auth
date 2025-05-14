@@ -10,7 +10,8 @@ html, body {
 body {
     text-align: center;
     color: black;
-    background-image: url('../img/fondojpg.jpg');
+    /*background-image: url('../img/fondojpg.jpg');*/
+    background-color: #0f172a;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,9 +33,9 @@ body {
 .buttons .btn {
     font-family: 'Boldonse', sans-serif;  /* Aplica la fuente que seleccionaste */
     padding: 10px 20px;                   /* Espaciado dentro del botón */
-    background-color: #3498db;            /* Color de fondo */
+    background-color: #767879;            /* Color de fondo */
     color: white;                         /* Color del texto */
-    border: 2px solid #2980b9;            /* Recuadro (borde) alrededor del enlace */
+    /*border: 2px solid #000000;            /* Recuadro (borde) alrededor del enlace */
     border-radius: 5px;                   /* Bordes redondeados */
     text-decoration: none;                /* Elimina el subrayado del enlace */
     cursor: pointer;                      /* Cambia el cursor al pasar sobre el enlace */
@@ -44,8 +45,8 @@ body {
 }
 
 .buttons .btn:hover {
-    background-color: #2980b9;            /* Cambia el color de fondo */
-    border-color: #1c598a;                /* Cambia el color del borde */
+    background-color: #0f172a;            /* Cambia el color de fondo */
+    border-color: #444648;                /* Cambia el color del borde */
     transform: scale(1.1);                 /* Agranda el botón ligeramente */
 }
 
